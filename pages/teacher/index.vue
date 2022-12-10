@@ -16,12 +16,12 @@
       <section class="c-sort-box unBr">
         <div>
           <!-- /无数据提示 开始-->
-          <section class="no-data-wrap" v-if="data.total==0">
-            <em class="icon30 no-data-ico">&nbsp;</em>
-            <span class="c-666 fsize14 ml10 vam">没有相关数据，小编正在努力整理中...</span>
-          </section>
+<!--          <section class="no-data-wrap" v-if="data.total==0">-->
+<!--            <em class="icon30 no-data-ico">&nbsp;</em>-->
+<!--            <span class="c-666 fsize14 ml10 vam">没有相关数据，小编正在努力整理中...</span>-->
+<!--          </section>-->
           <!-- /无数据提示 结束-->
-          <article v-if="data.total>0" class="i-teacher-list">
+          <article class="i-teacher-list">
             <ul class="of">
               <li v-for="teacher in data.items" :key="teacher.id">
                 <section class="i-teach-wrap">
@@ -41,7 +41,7 @@
                   </div>
                 </section>
               </li>
-              
+
             </ul>
             <div class="clear"></div>
           </article>
@@ -97,10 +97,16 @@
 import teacherApi from '@/api/teacher'
 
 export default {
+  data(){
+    return{
+      data:{}
+    }
+  },
   //异步调用，调用一次
   //params: 相当于之前 this.$route.params.id  等价  params.id
   asyncData({ params, error }) {
     return teacherApi.getTeacherList(1,8).then(response => {
+           console.log('response:',response)
           //this.data = response.data.data
           return { data: response.data.data }
        })
@@ -109,12 +115,20 @@ export default {
     //分页切换的方法
     //参数是页码数
     gotoPage(page) {
+      alert('aaa')
       teacherApi.getTeacherList(page,8)
         .then(response => {
+          console.log("response:",response)
+          console.log("response.data:",response.data)
+          console.log("response.data.data:",response.data.data)
           this.data = response.data.data
+          alert('aaa')
         })
     }
-  }
-
+  },
+  // created() {
+  //   // gotoPage(3)
+  //   alert('aa')
+  // }
 };
 </script>

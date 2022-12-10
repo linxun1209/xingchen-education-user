@@ -49,14 +49,14 @@
           </section>
           <section class="fl">
             <ol class="js-tap clearfix">
-             <li :class="{'current bg-orange':buyCountSort!=''}">
+              <li :class="{'current bg-orange':buyCountSort!=''}">
                 <a title="销量" href="javascript:void(0);" @click="searchBuyCount()">销量
-                <span :class="{hide:buyCountSort==''}">↓</span>
+                  <span :class="{hide:buyCountSort==''}">↓</span>
                 </a>
               </li>
               <li :class="{'current bg-orange':gmtCreateSort!=''}">
                 <a title="最新" href="javascript:void(0);" @click="searchGmtCreate()">最新
-                <span :class="{hide:gmtCreateSort==''}">↓</span>
+                  <span :class="{hide:gmtCreateSort==''}">↓</span>
                 </a>
               </li>
               <li :class="{'current bg-orange':priceSort!=''}">
@@ -68,13 +68,14 @@
           </section>
         </div>
         <div class="mt40">
-          <!-- /无数据提示 开始-->
-          <section class="no-data-wrap" v-if="data.total==0">
-            <em class="icon30 no-data-ico">&nbsp;</em>
-            <span class="c-666 fsize14 ml10 vam">没有相关数据，小编正在努力整理中...</span>
-          </section>
+<!--          &lt;!&ndash; /无数据提示 开始&ndash;&gt;-->
+<!--          <section class="no-data-wrap" v-if="data.total==0">-->
+<!--            <em class="icon30 no-data-ico">&nbsp;</em>-->
+<!--            <span class="c-666 fsize14 ml10 vam">没有相关数据，小编正在努力整理中...</span>-->
+<!--          </section>-->
           <!-- /无数据提示 结束-->
-          <article  v-if="data.total>0" class="comm-course-list">
+<!--          <article  v-if="data.total>0" class="comm-course-list">-->
+          <article  class="comm-course-list">
             <ul class="of" id="bna">
               <li v-for="item in data.items" :key="item.id">
                 <div class="cc-l-wrap">
@@ -106,38 +107,38 @@
         </div>
         <!-- 公共分页 开始 -->
         <div>
-      <div class="paging">
-        <!-- undisable这个class是否存在，取决于数据属性hasPrevious -->
-        <a
-          :class="{undisable: !data.hasPrevious}"
-          href="#"
-          title="首页"
-          @click.prevent="gotoPage(1)">首</a>
-        <a
-          :class="{undisable: !data.hasPrevious}"
-          href="#"
-          title="前一页"
-          @click.prevent="gotoPage(data.current-1)">&lt;</a>
-        <a
-          v-for="page in data.pages"
-          :key="page"
-          :class="{current: data.current == page, undisable: data.current == page}"
-          :title="'第'+page+'页'"
-          href="#"
-          @click.prevent="gotoPage(page)">{{ page }}</a>
-        <a
-          :class="{undisable: !data.hasNext}"
-          href="#"
-          title="后一页"
-          @click.prevent="gotoPage(data.current+1)">&gt;</a>
-        <a
-          :class="{undisable: !data.hasNext}"
-          href="#"
-          title="末页"
-          @click.prevent="gotoPage(data.pages)">末</a>
-        <div class="clear"/>
-      </div>
-    </div>
+          <div class="paging">
+            <!-- undisable这个class是否存在，取决于数据属性hasPrevious -->
+            <a
+              :class="{undisable: !data.hasPrevious}"
+              href="#"
+              title="首页"
+              @click.prevent="gotoPage(1)">首</a>
+            <a
+              :class="{undisable: !data.hasPrevious}"
+              href="#"
+              title="前一页"
+              @click.prevent="gotoPage(data.current-1)">&lt;</a>
+            <a
+              v-for="page in data.pages"
+              :key="page"
+              :class="{current: data.current == page, undisable: data.current == page}"
+              :title="'第'+page+'页'"
+              href="#"
+              @click.prevent="gotoPage(page)">{{ page }}</a>
+            <a
+              :class="{undisable: !data.hasNext}"
+              href="#"
+              title="后一页"
+              @click.prevent="gotoPage(data.current+1)">&gt;</a>
+            <a
+              :class="{undisable: !data.hasNext}"
+              href="#"
+              title="末页"
+              @click.prevent="gotoPage(data.pages)">末</a>
+            <div class="clear"/>
+          </div>
+        </div>
       </section>
     </section>
     <!-- /课程列表 结束 -->
@@ -281,13 +282,13 @@ export default {
 };
 </script>
 <style scoped>
-  .active {
-    background: #bdbdbd;
-  }
-  .hide {
-    display: none;
-  }
-  .show {
-    display: block;
-  }
+.active {
+  background: #bdbdbd;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 </style>
