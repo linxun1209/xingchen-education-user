@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5f02434-4b42-4c44-998f-8ef45f4c25f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/orders/_oid.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/pay/_pid.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/course/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/course/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/course/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/course/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +29,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/后端大佬成才之路/星辰学堂内容/xingchen-user-master/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true",
-    "vuejs.nuxt.types-notification-shown": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/后端大佬成才之路/星辰学堂内容/xingchen-user-master/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;vuejs.nuxt.types-notification-shown&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\后端大佬成才之路\星辰学堂内容\xingchen-user-master\pages" />
@@ -91,6 +85,9 @@
       <workItem from="1669794171062" duration="14908000" />
       <workItem from="1670231786125" duration="39000" />
       <workItem from="1670680809463" duration="4302000" />
+      <workItem from="1670725925137" duration="1878000" />
+      <workItem from="1670736495239" duration="4895000" />
+      <workItem from="1670823899769" duration="595000" />
     </task>
     <servers />
   </component>
